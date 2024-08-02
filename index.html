@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <!-- Using React create element  -->
+  <body>
+    <!-- it will not replace -->
+    <h1>shubhangi is on top</h1>
+
+    <div id="root">
+      <!-- this will be replaced by the codes from script.js -->
+      <h1>shubhangi is here</h1>
+    </div>
+
+    <!-- it will not replace -->
+    <h1>shubhangi is on down</h1>
+    
+    <!-- keep react before any js file -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+
+    <script src="scripts.js"></script>
+  </body>
+
+  <!-- Using JS create element  -->
+  <!-- <body>
+    <div id="root"></div>
+    <script>
+        // create h1 element using js
+        const heading = document.createElement("h1");
+        // add a h1 content
+        heading.innerHTML = "hello from JS"
+        const root = document.getElementById("root")
+        root.appendChild(heading);
+    </script>
+ 
+</body> -->
+</html>
